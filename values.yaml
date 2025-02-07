@@ -1,0 +1,17 @@
+frontend:
+  image: "adilet18/awesome-cats-frontend:latest"
+  replicas: 2
+  service:
+    port: 3000
+
+backend:
+  image: "adilet18/awesome-cats-backend:latest"
+  replicas: 2
+  service:
+    port: 4000
+  env:
+    DB_HOST: "rds-postgres.c1yuy4w6gwad.us-east-1.rds.amazonaws.com"
+    DB_PORT: 5432
+    DB_NAME: "mydb"
+    DB_USER: "db_admin"
+    DB_PASSWORD: "R5nkm4p50V6"
