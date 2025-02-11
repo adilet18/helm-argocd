@@ -1,15 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "{{ include "three-tier-app.fullname" . }}-test-connection"
+  name: test-connection
   labels:
-    {{- include "three-tier-app.labels" . | nindent 4 }}
-  annotations:
-    "helm.sh/hook": test
+    app: test-connection
 spec:
   containers:
-    - name: wget
-      image: busybox
-      command: ['wget']
-      args: ['{{ include "three-tier-app.fullname" . }}:{{ .Values.service.port }}']
+  - name: curl-container
+    image: curlimages/curl:latest
+    command: ["sleep", "3600"]  # Keep the pod running for testing
   restartPolicy: Never
