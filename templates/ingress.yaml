@@ -4,7 +4,7 @@ metadata:
   name: myapp-ingress
 spec:
   rules:
-  - host: ""
+  - host: "992382716990.realhandsonlabs.net"
     http:
       paths:
       - path: /
