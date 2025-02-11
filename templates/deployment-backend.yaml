@@ -16,12 +16,12 @@ spec:
       - name: backend
         image: {{ .Values.backend.image }}
         ports:
-        - containerPort: {{ .Values.backend.service.port }}
+        - containerPort: {{ .Values.backend.service.port | int }}
         env:
         - name: DB_HOST
           value: {{ .Values.backend.env.DB_HOST }}
         - name: DB_PORT
-          value: {{ .Values.backend.env.DB_PORT }}
+          value: {{ .Values.backend.env.DB_PORT | quote }}
         - name: DB_NAME
           value: {{ .Values.backend.env.DB_NAME }}
         - name: DATABASE_USER
