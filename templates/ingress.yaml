@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: myapp-ingress
+  namespace: argocd
 spec:
   rules:
   - host: "992382716990.realhandsonlabs.net"
