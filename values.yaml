@@ -1,12 +1,12 @@
 frontend:
   image: "adilet18/awesome-cats-frontend:latest"
-  replicas: 2
+  replicas: 3
   service:
     port: 3000
 
 backend:
   image: "adilet18/awesome-cats-backend:latest"
-  replicas: 2
+  replicas: 3
   service:
     port: 4000
   env:
