@@ -11,7 +11,7 @@ spec:
   tls:
   - hosts:
     - awesome-cats.533267208345.realhandsonlabs.net
-    secretName: tls_secret
+    secretName: tls-secret
   rules:
   - host: "awesome-cats.533267208345.realhandsonlabs.net"
     http:
