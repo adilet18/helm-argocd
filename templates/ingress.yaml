@@ -11,10 +11,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - awesome-cats.767397887597.realhandsonlabs.net
+    - awesome-cats.471112992927.realhandsonlabs.net
     secretName: tls-secret
   rules:
-  - host: "awesome-cats.767397887597.realhandsonlabs.net"
+  - host: "awesome-cats.471112992927.realhandsonlabs.net"
     http:
       paths:
       - path: /

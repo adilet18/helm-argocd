@@ -10,7 +10,7 @@ backend:
   service:
     port: 4000
   env:
-    DB_HOST: "rds-postgres.ch8g2w2wqvns.us-east-1.rds.amazonaws.com"
+    DB_HOST: "rds-postgres.c5ecqg4ea5py.us-east-1.rds.amazonaws.com"
     DB_PORT: "5432"
     DB_NAME: "mydb"
     DB_USER: ""
