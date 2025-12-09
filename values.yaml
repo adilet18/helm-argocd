@@ -2,7 +2,7 @@ frontend:
   image: "adilet18/awesome-cats-frontend:latest"
   replicas: 3
   service:
-    port: 3000
+    port: 3030
 
 backend:
   image: "adilet18/awesome-cats-backend:latest"
